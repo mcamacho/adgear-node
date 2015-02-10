@@ -4,6 +4,7 @@
   "description": "test",
   "main": "calls.js",
   "dependencies": {
+    "ejs": "^2.2.4",
     "express": "^4.11.2",
     "lodash": "^3.1.0",
     "request": "^2.53.0"

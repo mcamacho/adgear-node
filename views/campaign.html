@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HI</title>
+</head>
+<body>
+  <ul>
+  <% for(var l1 in data) { %>
+    <% if (help.gettype(data[l1]) !== "object") { %>
+    <li><%= l1 %> = <%= data[l1] %></li>
+    <% } else { %>
+    <li>
+      <ul>
+      <% for(var l2 in data[l1]) { %>
+        <% if (help.gettype(data[l1][l2]) === "object") { %>
+        <li><ul>
+        <% for(var l3 in data[l1][l2]) { %>
+          <li><%= l3 %> = <%= data[l1][l2][l3] %></li>
+        <% } %>
+        </ul></li>
+        <% } else { %>
+          <li><%= l1 %> = <%= data[l1][l2] %></li>
+        <% } %>
+      <% } %>
+      </ul>
+    </li>
+    <% } %>
+  <% } %>
+  </ul>
+</body>
+</html>
