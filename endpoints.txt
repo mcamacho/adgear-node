@@ -1,0 +1,14 @@
+ENDPOINT - find
+Works: Advertiser, AdUnit
+Not works: AgencyCampaign, Agency, Campaign
+
+curl -s --digest --user mauricio:0cbdfcd7cc2c5b099022adcd78cd7c90da210f46d20b09809d485d0cc1cf21b1 "http://api.admin.adgear.com/find.xml?entity_type=Advertiser&entity_id=6914"
+
+
+ENDPOINT - search
+
+curl -s --digest --user mauricio:0cbdfcd7cc2c5b099022adcd78cd7c90da210f46d20b09809d485d0cc1cf21b1 --data "search_query[name][value]=volkswagen&search_query[name][operator]=LIKE&search_query[entity][type]=Advertiser" "http://api.admin.adgear.com/search.xml"
+
+curl -s --digest --user mauricio:0cbdfcd7cc2c5b099022adcd78cd7c90da210f46d20b09809d485d0cc1cf21b1 --data "search_query[name][value]=volkswagen&search_query[name][operator]=LIKE" "http://api.admin.adgear.com/search.xml"
+
+curl -s --digest --user mauricio:0cbdfcd7cc2c5b099022adcd78cd7c90da210f46d20b09809d485d0cc1cf21b1 --data "search_query[entity][type]=Advertiser" "http://api.admin.adgear.com/search.xml"

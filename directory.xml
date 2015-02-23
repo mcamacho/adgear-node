@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://adgear.com/api/schemas/xml#output">
+  <_urls type="array">
+    <_url>
+      <url>http://api.admin.adgear.com/enumerations.xml</url>
+      <method>GET</method>
+      <name>list_enumerations</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>directory</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/advertisers.xml</url>
+      <method>POST</method>
+      <name>create_advertiser</name>
+      <input_element>advertiser</input_element>
+      <output_element>advertiser</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/users/2258-mauricio.xml</url>
+      <method>GET</method>
+      <name>read_current_user</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>user</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/facebook_campaigns.xml</url>
+      <method>POST</method>
+      <name>create_facebook_campaign</name>
+      <input_element>facebook_campaign</input_element>
+      <output_element>facebook_campaign</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/agency_publishers.xml</url>
+      <method>POST</method>
+      <name>create_agency_publisher</name>
+      <input_element>agency_publisher</input_element>
+      <output_element>agency_publisher</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/ad_unit_templates.xml</url>
+      <method>GET</method>
+      <name>list_ad_unit_templates</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_ad_unit_templates</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/advertisers.xml</url>
+      <method>GET</method>
+      <name>list_advertisers</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_advertisers</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/formats.xml</url>
+      <method>GET</method>
+      <name>list_formats</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_formats</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/agency_publishers.xml</url>
+      <method>GET</method>
+      <name>list_agency_publishers</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_agency_publishers</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/search.xml</url>
+      <method>POST</method>
+      <name>search</name>
+      <input_element>search_query</input_element>
+      <output_element>collection_search_results</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/channels.xml</url>
+      <method>POST</method>
+      <name>create_channel</name>
+      <input_element>channel</input_element>
+      <output_element>channel</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/data_profiles.xml</url>
+      <method>GET</method>
+      <name>list_data_profiles</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_data_profiles</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/reports.xml</url>
+      <method>GET</method>
+      <name>list_reports</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>reports_directory</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/conversion_groups.xml</url>
+      <method>POST</method>
+      <name>create_conversion_group</name>
+      <input_element>conversion_group</input_element>
+      <output_element>conversion_group</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/search_campaigns.xml</url>
+      <method>GET</method>
+      <name>list_search_campaigns</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_search_campaigns</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/data_profiles.xml</url>
+      <method>POST</method>
+      <name>create_data_profile</name>
+      <input_element>data_profile</input_element>
+      <output_element>data_profile</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/agency_campaigns.xml</url>
+      <method>POST</method>
+      <name>create_agency_campaign</name>
+      <input_element>agency_campaign</input_element>
+      <output_element>agency_campaign</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/uploads.xml</url>
+      <method>POST</method>
+      <name>create_upload</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>upload</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/search_campaigns.xml</url>
+      <method>POST</method>
+      <name>create_search_campaign</name>
+      <input_element>search_campaign</input_element>
+      <output_element>search_campaign</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/conversion_groups.xml</url>
+      <method>GET</method>
+      <name>list_conversion_groups</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_conversion_groups</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/find.xml</url>
+      <method>GET</method>
+      <name>find_entity</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>directory</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/formats.xml</url>
+      <method>POST</method>
+      <name>create_format</name>
+      <input_element>format</input_element>
+      <output_element>format</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/facebook_campaigns.xml</url>
+      <method>GET</method>
+      <name>list_facebook_campaigns</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_facebook_campaigns</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/agency_campaigns.xml</url>
+      <method>GET</method>
+      <name>list_agency_campaigns</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_agency_campaigns</output_element>
+    </_url>
+    <_url>
+      <url>http://api.admin.adgear.com/channels.xml</url>
+      <method>GET</method>
+      <name>list_channels</name>
+      <input_element xsi:nil="true" nil="true"></input_element>
+      <output_element>collection_channels</output_element>
+    </_url>
+  </_urls>
+</directory>

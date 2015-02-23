@@ -2,27 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HI</title>
+  <title>Adgear</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <ul>
-  <% for(var l1 in data) { %>
-    <% if (help.gettype(data[l1]) === "number") { %>
+  <ul class="row">
+  <% for (var l1 in data) { %>
+
+    <% if (help.gettype(data[l1]) !== "object") { %>
     <li><%= l1 %> = <%= data[l1] %></li>
-    <% } else { %>
-    <li>
-      <ul>
-      <% for(var l2 in data[l1]) { %>
-        <li><ul>
-        <li><a href="<%= help.campaignid(data[l1][l2]) %>"><%= data[l1][l2].name %></a></li>
-        <% for(var l3 in data[l1][l2]) { %>
-          <li><%= l3 %> = <%= data[l1][l2][l3] %></li>
+    <% }
+
+     else { %>
+    <li><%= l1 %> =
+      <% for (var l2 in data[l1]) { %>
+        <ul class="list-inline">
+
+        <% if (help.gettype(data[l1][l2]) !== "object") { %>
+          <li><%= l2 %> = <%= data[l1][l2] %></li>
+        <% }
+
+         else { %>
+          <li class=""><a href="<%= help.campaignid(data[l1][l2]) %>"><%= data[l1][l2].name %></a></li>
+
+          <% for (var l3 in data[l1][l2]) { %>
+          <li class="" title="<%= l3 %>"><%= data[l1][l2][l3] %></li>
+          <% } %>
+
         <% } %>
-        </ul></li>
+
+        </ul>
       <% } %>
-      </ul>
     </li>
     <% } %>
+
   <% } %>
   </ul>
 </body>
